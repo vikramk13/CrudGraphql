@@ -1,0 +1,32 @@
+schema{
+query:Query
+}
+
+type Query{
+
+getByName(name:String):Person
+getPersonById(id:Id):Person
+getAddresById(id:Id):Adress
+}
+
+
+type Mutation{
+
+
+}
+
+type Person{
+id:Integer
+name:String
+age:String
+adress:[String]
+}
+
+
+type Adress{
+id:Integer
+place:String
+phone:[String]
+
+
+}
